@@ -3,7 +3,7 @@
 
 ### Command list:
   Examples of the commands structure -> the expected result
-* Checking the content type of the http headers
+* Check the content type of the http headers
     * t https://cs.hac.ac.il text/html -> true  
     * t https://cs.hac.ac.il text -> true  
     * t https://cs.hac.ac.il img -> false  
