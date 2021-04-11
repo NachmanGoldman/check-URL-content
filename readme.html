@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>readme</title>
+</head>
+<body>
+
+<a href="api/com/company/package-summary.html">Java Doc</a>
+
+<h2>Name: <small>Nachman Goldman</small></h2>
+<h2>ID: <small>......</small></h2>
+<h3>This program reads commands from the console to perform various URL checks.</h3>
+<ol>
+    <h2>Command list:</h2>
+    <ul>
+        <li>Examples of the commands structure -> the expected result</li>
+    </ul>
+    <li>Checking the content type of the http headers</li>
+    <ul>
+        <li>t https://cs.hac.ac.il text/html -> true</li>
+        <li>t https://cs.hac.ac.il text -> true</li>
+        <li>t https://cs.hac.ac.il img -> false</li>
+        <li>t https://cs.hac.ac.il/wp-content/uploads/2020/07/hat.png img/gif -> false</li>
+        <li>t https://cs.hac.ac.il/wp-content/uploads/2020/07/hat.png imag -> true</li>
+    </ul>
+    <li>Search for words from a file in the URL content</li>
+    <ul>
+        <li>w https://en.wikipedia.org/wiki/Main_Page words.txt -> true</li>
+        <li>w https://www.mechon-mamre.org/i/t/t2601.htm words.txt -> false</li>
+    </ul>
+    <li>Check if the page contains a URL tag</li>
+    <ul>
+        <li>i https://www.mechon-mamre.org/i/t/t2601.htm -> false</li>
+        <li>i https://en.wikipedia.org/wiki/Help:Introduction -> true</li>
+    </ul>
+    <li>Check if the page is written in English <small>implemented only for English</small></li>
+    <ul>
+        <li>l https://en.wikipedia.org/wiki/Main_Page english -> true</li>
+        <li>l https://en.wikipedia.org/wiki/Main_Page engl -> false</li>
+        <li>l https://www.mechon-mamre.org/i/t/t2601.htm english -> false</li>
+    </ul>
+    <li>'q' to exit</li>
+
+
+</ol>
+
+</body>
+</html>
